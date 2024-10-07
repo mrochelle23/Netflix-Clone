@@ -1,0 +1,2021 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tagss for new branch -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./landing.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <title>Netflix Clone</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    
+    <div style="position: relative;">
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg netflix-navbar netflix-padding-left netflix-padding-right">
+      <div class="container-fluid">
+        <div class="netflix-row">
+          <div class="left d-flex align-items-center">
+            <a class="navbar-brand" href="#">
+              <img src="./images/logo.png" alt="">
+            </a>
+            <div  class="netflix-nav">
+               <section>
+                  <button>Home</button>
+                  <button>TV Shows</button>
+                  <button>Movies</button>
+                  <button>New & Popular</button>
+                  <button>My List</button>
+                  <button>Browse By Languages</button>
+               </section>
+            </div>
+            <div class="netflix-dropdown-box dropdown">
+              <button class="netflix-dropdown dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Browse
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Home</a></li>
+                <li><a class="dropdown-item" href="#">TV Shows</a></li>
+                <li><a class="dropdown-item" href="#">Movies</a></li>
+                <li><a class="dropdown-item" href="#">New & Popular</a></li>
+                <li><a class="dropdown-item" href="#">My List</a></li>
+                <li><a class="dropdown-item" href="#">Browse By Languages</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="right d-flex align-items-center">
+            <i class="bi bi-search"></i>
+            <i class="bi bi-bell-fill"></i>
+            <section class="netflix-profile">
+
+            </section>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- video -->
+      <div class="">
+         <section class="netflix-home-video">
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <video src="./video/video.mp4" autoplay muted loop></video>
+            <div class="content">
+                <section class="left">
+                    <img src="./images/image2.webp" alt="">
+                
+                    <div class="d-flex mt-2">
+                      <button class="btn btn-light m-2" > <i class="bi bi-play-fill" style="color: black; padding: 0%;"></i> Play Now </button>
+                      <button class="btn btn-secondary m-2"><i class="bi bi-info-circle" style=" padding: 0%;"></i> More Info</button>
+                    </div>
+                </section>
+               
+            </div>
+          </section>
+         
+      </div>
+    <!-- video -->
+
+      <!-- sliders -->
+      <div class="slider-box">
+        <div class="container-fluid slider">
+          <section class="d-flex justify-content-between margin-right">
+            <p class="text-white"> <b>Trending</b> </p>
+          </section>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            
+            <div class="carousel-inner" style="position: relative; overflow: visible;">
+              <div class="carousel-item active">
+                <section class="d-flex">
+                  <div class="card" >
+                    <img src="./images/trending/img1.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                        <section class="d-flex justify-content-between">
+                          <div>
+                            <i class="bi bi-play-circle-fill card-icon"  ></i>
+                            <i  class="bi bi-plus-circle card-icon"></i>
+                          </div>
+                          <div>
+                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                          </div>
+                        </section>
+                        <section class="d-flex align-items-center justify-content-between" >
+                           <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">99% Match</p> 
+                             <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                          
+                          </section>
+                          <span class="netflix-card-text text-white">TV Drama • TV Shows Based on Books • Crime TV Shows</span>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="./images/trending/img2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">95% Match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Medical TV Shows • Makeover Reality TV • Science & Nature TV • Reality TV • Lifestyle • Irreverent • Heartfelt • Feel-Good</span>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <img src="./images/trending/img3.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Drama Movies • Movies Based on Books • Movies Based on Real Life • Social Issue Dramas • Provocative • Offbeat • Bittersweet</span>
+                  </div> <div class="card-body"> 
+                        <section class="d-flex justify-content-between">
+                          <div>
+                            <i class="bi bi-play-circle-fill card-icon"  ></i>
+                            <i  class="bi bi-plus-circle card-icon"></i>
+                          </div>
+                          <div>
+                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                          </div>
+                        </section>
+                        <section class="d-flex align-items-center justify-content-between" >
+                           <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Match</p> 
+                             <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                          
+                          </section>
+                          <span class="netflix-card-text text-white">Drama Movies • Movies Based on Books • Movies Based on Real Life • Social Issue Dramas • Provocative • Offbeat • Bittersweet</span>
+                    </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img4.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">97% Match</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">British • Sports & Fitness • Biographical Documentaries • Docuseries • Inspiring</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img5.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">97% Match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Medical TV • Romantic TV Dramas • TV Dramas • TV Shows Based on Books v Heartfelt • Intimate</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img6.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">TV Dramas • TV Shows Based on Books • TV Shows Based on Real Life • Offbeat</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img19.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Sitcoms • TV Comedies • Goofy</span>
+                  </div>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section class="d-flex">
+                  <div class="card">
+                    <img src="./images/trending/img7.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Stand-Up Comedy • Deadpan • Witty • Irreverent</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img8.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">96% match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Medical TV Shows • Romantic TV Dramas • Emotional • Romantic</span>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <img src="./images/trending/img9.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Drama Movies • Comedy Movies • Social Issue Dramas • Cerebral</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img10.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">TV Dramas • TV Comedies • Steamy • Witty • Dark</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img11.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">TV Dramas • TV Comedies • LGBTQ+ TV Shows • Campy • Quirky</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img12.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">95% match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Sitcoms • TV Dramas • TV Comedies • LGBTQ+ TV Shows • Witty • Quirky • Irreverent</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img20.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">97% match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Drama Movies • Thriller Movies • Suspenseful • Exciting</span>
+                  </div>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section class="d-flex" >
+                  <div class="card" >
+                    <img src="./images/trending/img13.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">84% match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Family Watch Together TV • Food & Travel TV • British • Competition Reality TV • Feel-Good</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img14.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">96% match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">TV Dramas • Courtroom TV Shows • TV Shows Based on Books • TV Mysteries • Crime TV Shows • TV Thrillers • Witty • Suspenseful</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img15.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">95% match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Sitcoms • TV Comedies • LGBTQ+ TV Shows • Campy • Heartfelt</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img16.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">TV Dramas • Social Issue TV Dramas</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img17.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">91% match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Sitcoms • Medical TV Shows • TV Comedies • Romantic TV Comedies • Witty • Quirky • Romantic</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img18.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">92% match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Sitcoms • Canadian • TV Comedies</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/Img21.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">95% match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">TV Dramas • Crime TV Shows • TV Thrillers • Exciting</span>
+                  </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="container-fluid  slide2">
+          <section class="d-flex justify-content-between margin-right margin-title">
+            <p class="text-white"> <b>Hollywood</b> </p>
+          </section>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            
+            <div class="carousel-inner" style="position: relative; overflow: visible;">
+              <div class="carousel-item active">
+                <section class="d-flex" >
+                  <div class="card" >
+                    <img src="./images/Hollywood/img1.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                        <section class="d-flex justify-content-between">
+                          <div>
+                            <i class="bi bi-play-circle-fill card-icon"  ></i>
+                            <i  class="bi bi-plus-circle card-icon"></i>
+                          </div>
+                          <div>
+                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                          </div>
+                        </section>
+                        <section class="d-flex align-items-center justify-content-between" >
+                           <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                             <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                          
+                          </section>
+                          <span class="netflix-card-text text-white">TV Dramas • LGBTQ+ TV Shows • Social Issue TV Dramas • Steamy</span>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="./images/Hollywood/img2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">87% match</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <img src="./images/Hollywood/img3.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Reality TV • Docuseries • Investigative • Intimate</span>
+                  </div> <div class="card-body"> 
+                        <section class="d-flex justify-content-between">
+                          <div>
+                            <i class="bi bi-play-circle-fill card-icon"  ></i>
+                            <i  class="bi bi-plus-circle card-icon"></i>
+                          </div>
+                          <div>
+                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                          </div>
+                        </section>
+                        <section class="d-flex align-items-center justify-content-between" >
+                           <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                             <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                          
+                          </section>
+                          <span class="netflix-card-text text-white">Reality TV • Docuseries • Investigative • Intimate</span>
+                    </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Hollywood/img4.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Drama Movies • Comedy Movies • Movies Based on Books • Movies Based on Real Life • Late Night Comedy Movies • Raunchy • Exciting</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Hollywood/img5.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Satires • Comedy Movies • Variety TV • Irreverent</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Hollywood/img6.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Hollywood/img19.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">93% Match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Drama Movies • Comedy Movies • Movies Based on Real Life • Action & Adventure Movied • Deadpan • Exciting</span>
+                  </div>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section class="d-flex ">
+                  <div class="card">
+                    <img src="./images/Hollywood/img7.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Kids' TV • Sitcoms • TV Comdedies • Feel-Good</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Hollywood/img8.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Reality TV • LGBTQ+ TV Shows • Lifestyle</span>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <img src="./images/Hollywood/img9.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">64% match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Comedy Movies • Film Noir • Mystery Movies • Action & Adventure MOvies • Deadpan • Suspenseful</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Hollywood/img10.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Documentary Films • Historical Documentaries • Biographical Documentaries • Investigative • Inspiring</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Hollywood/img11.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Romantic Comedy Movies • Drama Movies • Comedy Movies • Romantic Movies • Musicals • Intimate • Romantic</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Hollywood/img12.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">69% match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Comedy Movies • Movies Based on Books • Action & Adventure Movies • Offbeat</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Hollywood/img20.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Stand-Up Comedy • Witty • Irreverent • Goofy</span>
+                  </div>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section class="d-flex ">
+                  <div class="card" >
+                    <img src="./images/trending/img1.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">99% match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">TV Drama • TV Shows Based on Books • Crime TV Shows</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Hollywood/img14.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Hollywood/img15.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Monster Movies • Action & Adventure Movies • Suspenseful • Exciting</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Hollywood/img16.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Hollywood/img17.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Quirky Romance • Romantic Comedy Movies • Comedy Movies • Romantic Movies • Late Night Comedy Movies • Raunchy • Quirky • Romantic</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Hollywood/img18.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Hollywood/img21.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">65% Match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Drama Movies • Thriller Movies • Social Issue Dramas • Mind-Bending • Suspenseful</span>
+                  </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="container-fluid  slide3">
+          <section class="d-flex justify-content-between margin-right margin-title2">
+            <p class="text-white"> <b>Bollywood</b> </p>
+          </section>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            
+            <div class="carousel-inner" style="position: relative; overflow: visible;">
+              <div class="carousel-item active">
+                <section class="d-flex " >
+                  <div class="card" >
+                    <img src="./images/Bollywood/img1.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                        <section class="d-flex justify-content-between">
+                          <div>
+                            <i class="bi bi-play-circle-fill card-icon"  ></i>
+                            <i  class="bi bi-plus-circle card-icon"></i>
+                          </div>
+                          <div>
+                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                          </div>
+                        </section>
+                        <section class="d-flex align-items-center justify-content-between" >
+                           <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                             <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                          
+                          </section>
+                          <span class="netflix-card-text text-white">TV Dramas • Indian • TV Comedies • Hindi-Language TV Shows • Offbeat • Irreverent</span>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="./images/Bollywood/img2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <img src="./images/Bollywood/img3.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Quirky Romance • Romantic Movies • Charming • Quirky • Heartfelt</span>
+                  </div> <div class="card-body"> 
+                        <section class="d-flex justify-content-between">
+                          <div>
+                            <i class="bi bi-play-circle-fill card-icon"  ></i>
+                            <i  class="bi bi-plus-circle card-icon"></i>
+                          </div>
+                          <div>
+                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                          </div>
+                        </section>
+                        <section class="d-flex align-items-center justify-content-between" >
+                           <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                             <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                          
+                          </section>
+                          <span class="netflix-card-text text-white">Quirky Romance • Romantic Movies • Charming • Quirky • Heartfelt</span>
+                    </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Bollywood/img4.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Indian • Drama Movies • Action && Adventure Movies</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Bollywood/img5.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Indian • Hindi-Language Movies • Drama Movies • Movies Based on Books • Social Issue Dramas • Provocative</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Bollywood/img6.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Indian • Hindi-Language Movies • Bollywood Movies • Drama Movies • Sentimental • Emotional</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Bollywood/img19.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Indian • Hindi-Language Movies • Bollywood Movies • Drama Movies • Sports Dramas • Romantic Movies • Period Pieces • Social Issue Dramas • Inspiring • Emotional • Romantic</span>
+                  </div>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section class="d-flex">
+                  <div class="card">
+                    <img src="./images/Bollywood/img7.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Indian Indian • Hindi-Language Movies • Bollywood Movies • Romantic Comedy Movies • Drama Movies • Comedy Movies •  Romantic Movies • Irreverent • Emotional • Romantic</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Bollywood/img8.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Indian • Hindi-Language Movies • Bollywood Movies • Romantic Comedy Movies • Comedy Movies •  Romantic Movies • Irreverent • Emotional • Romantic</span>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <img src="./images/Bollywood/img9.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Indian • Hindi-Language Movies • Bollywood Movies • Romantic Comedy Movies • Drama Movies • Comedy Movies •  Romantic Movies • Charming • Feel-Good • Emotional</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Bollywood/img10.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Indian • Hindi-Language Movies • Bollywood Movies • Drama Movies • Comedy Movies • Courtroom Movies • Social Issue Dramas • Quirky • Understated</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Bollywood/img11.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Indian • Hindi-Language Movies • Bollywood Movies • Romantic Comedy Movies • Drama Movies • Comedy Movies •  Romantic Movies • Emotional • Romantic</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Bollywood/img12.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Indian • Hindi-Language Movies • Bollywood Movies • Romantic Comedy Movies • Drama Movies • Comedy Movies •  Romantic Movies • Charming • Witty • Feel-Good</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Bollywood/img20.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Indian • Hindi-Language Movies • Bollywood Movies • Romantic Comedy Movies • Drama Movies • Comedy Movies •  Romantic Movies • Sentimental • Emotional • Romantic</span>
+                  </div>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section class="d-flex ">
+                  <div class="card" >
+                    <img src="./images/Bollywood/img13.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Indian • Hindi-Language Movies • Bollywood Movies • Romantic Comedy Movies • Drama Movies • Comedy Movies •  Romantic Movies • Emotional • Romantic</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Bollywood/img14.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Indian • Hindi-Language Movies • Bollywood Movies • Thriller Movies • Movies Based on Books • Cerebral • Suspenseful</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Bollywood/img15.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Indian • Hindi-Language Movies • Bollywood Movies • Drama Movies • Thriller Movies •  Movies Based on Books • Spy Movies • Suspenseful</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Bollywood/img16.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Indian • Hindi-Language Movies • Bollywood Movies • Comedy Movies • Action & Adventure Movies • Feel-Good</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Bollywood/img17.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Indian • Hindi-Language Movies • Bollywood Movies • Drama Movies •  Romantic Movies • Action & Adventure Movies • Emotional • Exciting • Romantic</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Bollywood/img18.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Indian • Hindi-Language Movies • Bollywood Movies • Drama Movies • Inspiring • Heartfelt • Feel-Good</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Bollywood/img21.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"></p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Indian • Hindi-Language Movies • Bollywood Movies • Drama Movies • Bittersweet • Emotional</span>
+                  </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="container-fluid  slide4">
+          <section class="d-flex justify-content-between margin-right margin-title3">
+            <p class="text-white"> <b>Award-Winning TV Shows</b> </p>
+          </section>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            
+            <div class="carousel-inner" style="position: relative; overflow: visible;">
+              <div class="carousel-item active">
+                <section class="d-flex " >
+                  <div class="card" >
+                    <img src="./images/trending/img18.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                        <section class="d-flex justify-content-between">
+                          <div>
+                            <i class="bi bi-play-circle-fill card-icon"  ></i>
+                            <i  class="bi bi-plus-circle card-icon"></i>
+                          </div>
+                          <div>
+                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                          </div>
+                        </section>
+                        <section class="d-flex align-items-center justify-content-between" >
+                           <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">92% Match</p> 
+                             <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                          
+                          </section>
+                          <span class="netflix-card-text text-white">Sitcoms • Canadian • TV Comedies</span>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="./images/Award-Winning TV Shows/img2.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">96% Match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">TV Dramas • TV Comedies • Raunchy • Quirky • Irreverent</span>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <img src="./images/Award-Winning TV Shows/img3.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">TV Dramas • Crime TV Shows • TV Thrillers • Social Issue TV Dramas • Suspenseful</span>
+                  </div> <div class="card-body"> 
+                        <section class="d-flex justify-content-between">
+                          <div>
+                            <i class="bi bi-play-circle-fill card-icon"  ></i>
+                            <i  class="bi bi-plus-circle card-icon"></i>
+                          </div>
+                          <div>
+                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                          </div>
+                        </section>
+                        <section class="d-flex align-items-center justify-content-between" >
+                           <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Match</p> 
+                             <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                          
+                          </section>
+                          <span class="netflix-card-text text-white">TV Dramas • Crime TV Shows • TV Thrillers • Social Issue TV Dramas • Suspenseful</span>
+                    </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Award-Winning TV Shows/img4.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">97% Match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Political TV Shows • TV Dramas • TV Thrillers • Cerebral • Dark</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img13.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">84% Match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Family Watch Together TV • Food & Travel TV • British • Competition Reality TV • Feel-Good</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Award-Winning TV Shows/img6.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">86% Match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">TV Dramas • TV Shows Based on Books • Teen TV • Heartfelt • Emotional</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Award-Winning TV Shows/img7.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">95% Match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">TV Dramas • TV Comedies • Raunchy • Irreverent</span>
+                  </div>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section class="d-flex">
+                  <div class="card">
+                    <img src="./images/trending/Img21.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">95% Match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">TV Dramas • Crime TV Shows • TV Thrillers • Exciting</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Award-Winning TV Shows/img9.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">72% Match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Political TV Shows • TV Dramas • British • TV Shows Based on Real Life • Intimate</span>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <img src="./images/Award-Winning TV Shows/img10.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">94% Match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Political TV Shows • TV Dramas • Crime TV Shows • TV Thrillers • Suspenseful • Exciting</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Award-Winning TV Shows/img11.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">83% Match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Sitcoms • TV Comedies • Heartfelt</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Award-Winning TV Shows/img12.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">90% Match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">TV Dramas • British • Period Pieces • Crime TV Shows • Violent</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Award-Winning TV Shows/img13.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">91% Match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">TV Dramas • Bittersweet • Emotional</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Award-Winning TV Shows/img14.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">91% Match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Sitcoms • TV Comedies • Witty • Quirky</span>
+                  </div>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section class="d-flex ">
+                  <div class="card" >
+                    <img src="./images/Award-Winning TV Shows/img15.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">95% Match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">TV Dramas • Crime TV Shows • TV Thrillers • Ominous • Offbeat • Dark</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Award-Winning TV Shows/img16.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">91% Match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">TV Dramas • Crime TV Shows • TV Thrillers • Violent • Gritty • Dark</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Award-Winning TV Shows/img17.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">88% Match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Romantic TV Dramas • TV Dramas • TV Comedies • Romantic TV Comedies • Campy • Quirky</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Award-Winning TV Shows/img18.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">77% Match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Romantic TV Dramas • Spanish • Period Pieces • LGBTQ+ TV Shows • Bittersweet • Emotional</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Award-Winning TV Shows/img19.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">89% Match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">TV Dramas • British • Teen TV Shows • TV Comedies • LGBTQ+ TV Shows • Raunchy • Irreverent • Heartfelt</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Award-Winning TV Shows/img20.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">72% Match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">TV Dramas • British • TV Shows Based on Books • Social Issue TV Dramas • Sentimental • Bittersweet</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/Award-Winning TV Shows/img21.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">88% Match</p> 
+                           <span class="m-2 netflix-card-text text-white"></span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Sitcoms • TV Comedies • Witty • Irreverent</span>
+                  </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+      </div>
+
+
+      <!-- footer  --> 
+      <div class="container footer">
+          <div class="row">
+            <div class="col-md-10 mx-auto">
+                <div class="row">
+                  <div class="col-md-3">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                      <div class="links grid-cell">
+                        <a href="https://www.facebook.com/netflixus"><i class="fa fa-facebook" style="color: white;"></i></a>
+                        <a href="https://www.instagram.com/Netflix/"><i class="fa fa-instagram" style="color:white;"></i></a>
+                        <a href="https://twitter.com/netflix"><i class="fa fa-twitter" style="color: white;"></i></a>
+                        <a href="https://www.youtube.com/user/NewOnNetflix"><i class="fa fa-youtube-play" style="color: white;"></i></a>
+                      </div>
+                        <ul>
+                          <li><button>Audio description</button></li>
+                          <li><button>Investor Relations</button></li>
+                          <li><button>Privacy</button></li>
+                          <li><button>Contact Us</button></li>
+                        </ul>
+                  </div>
+                  <div class="col-md-3">
+                    <br>
+                    <ul>
+                      <li><button>Help Center</button></li>
+                      <li><button>Jobs</button></li>
+                      <li><button>Legal Notice</button></li>
+                      <li><button>Do Not Sell or Share My Personal<br>
+                        Information</button></li>
+                    </ul>
+              </div>
+              <div class="col-md-3">
+                <br>
+                <ul>
+                  <li><button>Gift Cards</button></li>
+                  <li><button>Netflix Shop</button></li>
+                  <li><button>Cookie Preferences</button></li>
+                  <li><button>Ad Choices</button></li>
+            
+                </ul>
+               </div>
+               <div class="col-md-3">
+                <br>
+                <ul>
+                  <li><button>Media Center</button></li>
+                  <li><button>Terms of Use</button></li>
+                  <li><button>Corporate Information</button></li>
+                </ul>
+               </div>
+                </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10 mx-auto">
+              <div class="row">
+               
+                <div class="col">
+                  <br>
+                  <br>
+                  <button class="service-code">Service Code</button>
+                  <br>
+                  <p class="copy-right">© 1997-2023 Netflix, Inc.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./javaScript.js"></script>
+  </body>
+</html>
